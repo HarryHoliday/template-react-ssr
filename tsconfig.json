@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "rootDirs": ["src", "stories"],
+    "baseUrl": "./src",
+    "paths": {
+      "~src/*": ["*"],
+      "~server/*": ["server/*"],
+      "~shared/*": ["shared/*"],
+      "~styles/*": ["styles/*"],
+      "~components/*": ["shared/components/*"],
+      "~pages/*": ["shared/pages/*"]
+    },
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react",
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true
+  },
+  "include": ["src"],
+  "files": ["global.d.ts"],
+  "exclude": ["node_modules"]
+}
