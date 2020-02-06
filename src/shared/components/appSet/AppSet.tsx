@@ -8,7 +8,7 @@ const AppSet: FC = ({ children }) => {
   const [isAvailable, setAvailable] = useState(false);
   useEffect(() => {
     const fetchData = async (): Promise<void> => {
-      await Promise.all([checkHealth(), sleep(1000)]);
+      await Promise.all([checkHealth(), sleep(10000)]);
       setAvailable(true);
     };
     fetchData();

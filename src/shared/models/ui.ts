@@ -17,7 +17,7 @@ const defaultState: UiState & SideBarState = {
 const ui: ModelConfig<UiState & SideBarState> = createModel({
   state: { ...defaultState },
   reducers: {
-    toggleSideBarOpen(state: UiState & SideBarState) {
+    toggleSideBarOpen(state: UiState & SideBarState): UiState & SideBarState {
       return { ...state, isSideBarOpened: !state.isSideBarOpened };
     },
   },
