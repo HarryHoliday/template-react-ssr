@@ -1,10 +1,12 @@
-import './lib/processErrorHandler';
+import processErrorHanlder from './lib/processErrorHandler';
 import app from './app';
 import errorHandler from './lib/errorHandler';
 import render from './render';
 import api from './api';
 
 const port = process.env.PORT || 3000;
+//
+processErrorHanlder();
 // api
 app.use('/api', api);
 // render
