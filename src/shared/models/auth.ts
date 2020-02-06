@@ -22,15 +22,15 @@ const defaultState: AuthState = {
 const auth: ModelConfig<AuthState> = createModel({
   state: { ...defaultState },
   reducers: {
-    signIn(state: AuthState) {
+    signIn(state: AuthState): AuthState {
       return { isAuthenticated: true, userInfo: { name: 'harry holiday', email: 'example.com' } };
     },
-    signOut(state: AuthState) {
+    signOut(state: AuthState): AuthState {
       return { ...defaultState };
     },
   },
   effects: dispatch => ({
-    async request(payload: boolean, rootState: iRootState) {
+    async request(payload: boolean, rootState: iRootState): Promise<void> {
       try {
         await new Promise(resolve => setTimeout(resolve, 1000));
       } catch (error) {
