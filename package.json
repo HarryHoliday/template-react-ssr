@@ -198,6 +198,7 @@
     "lint-staged": "^10.0.7",
     "nodemon-webpack-plugin": "^4.2.2",
     "null-loader": "^3.0.0",
+    "prettier": "^1.19.1",
     "redux-logger": "^3.0.6",
     "webpack-node-externals": "^1.7.2"
   }
